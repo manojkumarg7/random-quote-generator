@@ -13,7 +13,7 @@ body {
 }
 .wrapper {
   border: 2px solid black;
-  padding: 5%;
+  padding: 3%;
   background-color: aliceblue;
 }
 .wrapper header {
@@ -75,8 +75,14 @@ body {
   border-radius: 10px;
 }
 
-/* @media only screen and (max-width: 576px) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 576px) {
+  .loading_button button {
+    height: 45px;
+    width: 100px;
+    background-color: rgb(62, 62, 235);
   }
-} */
+
+  .icons_link {
+    gap: 10px;
+  }
+}
