@@ -9,11 +9,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(98, 98, 206);
+  background-color: rgb(70, 70, 194);
 }
 .wrapper {
-  width: 500px;
-  border: 2px solid red;
+  border: 2px solid black;
   padding: 5%;
   background-color: aliceblue;
 }
@@ -25,18 +24,59 @@ body {
 .wrapper .quote {
   padding-top: 25px;
 }
+.wrapper .quote p {
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
 .wrapper .author {
-  padding-top: 10px;
   float: right;
 }
+.wrapper .author .author_name {
+  font-size: 18px;
+  font-style: italic;
+}
+.wrapper .quote p i:first-child {
+  margin: 3px 10px 0 0;
+}
+.wrapper .quote p i:last-child {
+  margin: 0 0 3px 10px;
+}
+
 .wrapper .buttons {
   padding-top: 50px;
+  margin: 30px;
+  border-top: 1px solid black;
+}
+.wrapper .buttons li {
+  border: 1px solid white;
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(62, 62, 235);
 }
 .icons_link {
   list-style-type: none;
   display: flex;
   gap: 30px;
+  float: left;
 }
-.loading_button {
+.loading_button button {
   float: right;
+  height: 50px;
+  width: 140px;
+  background-color: rgb(62, 62, 235);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
 }
+
+/* @media only screen and (max-width: 576px) {
+  body {
+    background-color: lightblue;
+  }
+} */
